@@ -3,9 +3,9 @@ import "./CharacterCard.scss"
 import noImageAvailable from "../../images/no-image.png"
 
 const CharacterCard = ({character, index}) => {
-  const {name, image, species, gender, house, ancestry, wand, yearOfBirth, } = character
+  const {name, image, species, gender, house, ancestry, wand, yearOfBirth} = character
 
-  return (
+  return <>
     <article key={index} className="card">
       <h2 className="card__heading">{name}</h2>
       {character.image ? <img className="card__image" src={image} alt={name}/> 
@@ -20,7 +20,7 @@ const CharacterCard = ({character, index}) => {
         {yearOfBirth ? <p className="trait"><b>Year Of Birth: </b>{yearOfBirth}</p> : <></>}
       </div>
     </article>
-  )
+  </>
 }
 
 export default CharacterCard;

@@ -1,23 +1,29 @@
 .card{
-    display: flex;
-    flex-direction: rows;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
     margin: 0.5ch;
     border: 2px solid black;
     width: 210px;
-
+    align-items: top;
+    padding-bottom: 1ch;
     &__heading{
         margin: 2px 2ch;
+        height: 5ch;
         text-align: center;
     }
     &__image{
         width: 200px;
+        height: 300px;
+        object-fit: cover;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1ch;
     }
 
 }
 
 .trait{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 180px
 }
