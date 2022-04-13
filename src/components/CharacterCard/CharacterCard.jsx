@@ -19,7 +19,6 @@ const CharacterCard = ({character, index}) => {
           " " + wand.core + " " + wand.length}</p> : <></>}
         {yearOfBirth ? <p className="trait"><b>Year Of Birth: </b>{yearOfBirth}</p> : <></>}
       </div>
-      <img src="" alt="" />
     </article>
   )
 }
