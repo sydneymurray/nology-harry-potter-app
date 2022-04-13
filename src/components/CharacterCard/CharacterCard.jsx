@@ -2,22 +2,22 @@ import React from 'react'
 import "./CharacterCard.scss"
 import noImageAvailable from "../../images/no-image.png"
 
-const CharacterCard = (character, index) => {
-  
+const CharacterCard = ({character, index}) => {
+  const {name, image, species, gender, house, ancestry, wand, yearOfBirth, } = character
+
   return (
     <article key={index} className="card">
-      <h2 className="card__heading">{character.name}</h2>
-      {character.image ? <img className="card__image" src={character.image} alt={character.name}/> 
+      <h2 className="card__heading">{name}</h2>
+      {character.image ? <img className="card__image" src={image} alt={name}/> 
         : <img className="card__image" src={noImageAvailable} alt="No Image Available"/>}
       <div className="character-details">
-        {character.species ? <p className="trait"><b>Species: </b>{character.species}</p> : <></>}
-        {character.gender ? <p className="trait"><b>Gender: </b>{character.gender}</p> : <></>}
-        {character.house ? <p className="trait"><b>House: </b>{character.house}</p> : <></>}
-        {character.ancestry ? <p className="trait"><b>Ancestry: </b>{character.ancestry}</p> : <></>}
-        {character.wand.length ? <p className="trait"><b>Wand: </b>{character.wand.wood + 
-          " " + character.wand.core + " " + character.wand.length}</p> : <></>}
-        {character.yearOfBirth ? <p className="trait"><b>Year Of Birth: </b>{character.yearOfBirth}</p> : <></>}
-        {character.gender ? <p className="trait"><b>Gender: </b>{character.gender}</p> : <></>}
+        {species ? <p className="trait"><b>Species: </b>{species}</p> : <></>}
+        {gender ? <p className="trait"><b>Gender: </b>{gender}</p> : <></>}
+        {house ? <p className="trait"><b>House: </b>{house}</p> : <></>}
+        {ancestry ? <p className="trait"><b>Ancestry: </b>{ancestry}</p> : <></>}
+        {wand.length ? <p className="trait"><b>Wand: </b>{wand.wood + 
+          " " + wand.core + " " + wand.length}</p> : <></>}
+        {yearOfBirth ? <p className="trait"><b>Year Of Birth: </b>{yearOfBirth}</p> : <></>}
       </div>
       <img src="" alt="" />
     </article>
