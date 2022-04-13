@@ -7,7 +7,7 @@ const App = () => {
   return <>
     <h1 className="App-header">My Harry Potter Challenge App</h1>
     <div className="card-container">
-      {characters.map((character, index) => CharacterCard(character, index))}
+      {characters.map((character, index) => <CharacterCard character={character} key={index}/>)}
     </div>
   </>
 }
