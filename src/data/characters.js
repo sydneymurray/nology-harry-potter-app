@@ -792,7 +792,7 @@ export const characters = [
           "Michael Gambon"
       ],
       "alive": false,
-      "image": ""
+      "image": "https://vignette.wikia.nocookie.net/harrypotter/images/4/40/Albus_Dumbledore_(HBP_promo)_3.jpg/revision/latest/scale-to-width-down/2000?cb=20150822232849"
   },
   {
       "name": "Dedalus Diggle",

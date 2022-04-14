@@ -8,7 +8,7 @@ const CharacterCard = ({character, index}) => {
   return <>
     <article key={index} className="card">
       <h2 className="card__heading">{name}</h2>
-      {character.image ? <img className="card__image" src={image} alt={name}/> 
+      {image ? <img className="card__image" src={image} alt={name}/> 
         : <img className="card__image" src={noImageAvailable} alt="No Image Available"/>}
       <div className="character-details">
         {species ? <p className="trait"><b>Species: </b>{species}</p> : <></>}
